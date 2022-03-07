@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../Callback test/.idea/Callback test.iml" filepath="$PROJECT_DIR$/../Callback test/.idea/Callback test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../CLNT/Les opdrachten/.idea/Les opdrachten.iml" filepath="$PROJECT_DIR$/../../CLNT/Les opdrachten/.idea/Les opdrachten.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../CLNT/Quiz Game/.idea/Quiz Game.iml" filepath="$PROJECT_DIR$/../../CLNT/Quiz Game/.idea/Quiz Game.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/ReversiClient.iml" filepath="$PROJECT_DIR$/.idea/ReversiClient.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../CLNT/Promises/.idea/broodjebestellen.iml" filepath="$PROJECT_DIR$/../../CLNT/Promises/.idea/broodjebestellen.iml" />
+    </modules>
+  </component>
+</project>

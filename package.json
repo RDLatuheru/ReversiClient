@@ -1,0 +1,19 @@
+{
+  "name": "reversiclient",
+  "version": "1.0.0",
+  "description": "boeit niet",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Raphael",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-uglify": "^3.0.2"
+  }
+}

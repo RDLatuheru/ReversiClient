@@ -1,0 +1,83 @@
+<html>
+<head>
+    <link rel="shortcut icon" type="image/png" href="jasmine/lib/jasmine/jasmine_favicon.png">
+    <link rel="stylesheet" type="text/css" href="jasmine/lib/jasmine/jasmine.css">
+
+    <!-- JQUERY MINI -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- JQUERY -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+
+    <script type="text/javascript" src="jasmine/lib/jasmine/jasmine.js"></script>
+    <script type="text/javascript" src="jasmine/lib/jasmine/jasmine-html.js"></script>
+    <script type="text/javascript" src="jasmine/lib/jasmine/boot.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="../src/js/feedbackwidget.js"></script>
+    <script type="text/javascript" src="../src/js/Game.js"></script>
+
+</head>
+<body>
+
+<script>
+
+    beforeAll(function(done) {
+        $(function(){
+            done();
+        });
+    });
+
+    describe("A suite", function() {
+      it("contains spec with an expectation", function() {
+        expect(true).toBe(true);
+      });
+    });
+
+    describe("Application initialisation", function() {
+      it("Method init returns true", function() {
+        const result = myApp.init();
+        expect(result).toBe(true);
+      });
+    });
+
+    describe("Hide feedback widget", function (){
+        it('should hide specified widget', function () {
+            const widget = $("#feedback-success");
+            const feedback = new FeedbackWidget("feedback-success")
+           feedback.show();
+
+            expect($(widget)).toBeDefined();
+            expect($(widget).attr('style')).toBe('display: none;')
+        });
+    })
+
+    describe("game.js", function (){
+        it('should define Game', function () {
+            expect(Game).toBeDefined();
+        });
+    })
+
+    describe("game.js -> Game", function (){
+        it('should contain an initialisation function', function () {
+            expect(typeof Game.init).toBe("function")
+        });
+    })
+
+
+</script>
+
+
+<div style="display: none">
+    <div id="feedback-success" class="alert alert-success" role="alert">
+        <p>Veel succes met deze module!</p>
+    </div>
+
+    <div id="feedback-danger" class="alert alert-danger" role="alert" style="display:none">
+        <p>Pas op voor loslopende bits.</p>
+    </div>
+
+    <div>
+        <button id="selector">OK</button>
+    </div>
+</div>
+</body>
+</html>
