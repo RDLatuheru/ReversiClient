@@ -1,2 +1,3 @@
 # ReversiClient
-This project goes hard, feel free to screenshot. BOTTOM TEXT
+## This project goes hard, feel free to screenshot. 
+## BOTTOM TEXT
