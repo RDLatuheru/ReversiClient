@@ -12,8 +12,6 @@
     <orderEntry type="library" name="bootstrap" level="application" />
     <orderEntry type="library" name="jquery" level="application" />
     <orderEntry type="module" module-name="Les opdrachten" />
-    <orderEntry type="module" module-name="broodjebestellen" />
-    <orderEntry type="module" module-name="Quiz Game" />
-    <orderEntry type="module" module-name="Callback test" />
+    <orderEntry type="module" module-name="AJAX test" />
   </component>
 </module>

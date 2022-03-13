@@ -1,5 +1,3 @@
-//gulpfile.js/index.js
-// const { src, dest } = require('gulp');
 const {series} = require('gulp'), gulp = require('gulp'), concat = require('gulp-concat'), uglify = require('gulp-uglify');
 
 function concatJS(){
@@ -20,5 +18,23 @@ function defaultTask(cb) {
     console.log("default task succesful")
 }
 
-// exports.build = series(concatJS);
-exports.default = series(defaultTask, concatJS);
+function concatFiles(cb){
+    gulp.src("src/js/*.js").pipe(concat("scripts.js")).pipe(gulp.dest("dist/"))
+    cb();
+}
+
+const gulpSass = require('gulp-sass')(require('sass'));
+
+function sass(cb){
+    gulp.src("src/css/*.scss")
+        .pipe(gulpSass().on('error', gulpSass.logError))
+        .pipe(concat("style.css"))
+        .pipe(gulp.dest('dist/'));
+    cb();
+}
+
+exports.sass = sass;
+
+exports.concatFiles = concatFiles;
+
+exports.default = series(defaultTask);
