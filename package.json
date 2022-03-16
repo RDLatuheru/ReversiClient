@@ -1,4 +1,5 @@
 {
+  "type": "module",
   "name": "reversiclient",
   "version": "1.0.0",
   "description": "boeit niet",
@@ -12,11 +13,25 @@
   "author": "Raphael",
   "license": "ISC",
   "dependencies": {
-    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
     "gulp-concat": "^2.6.1",
+    "gulp-minify": "^3.1.0",
+    "gulp-order": "^1.2.0",
     "gulp-sass": "^5.1.0",
     "gulp-uglify": "^3.0.2",
     "node-sass": "^7.0.1",
     "sass": "^1.49.9"
-  }
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.16.11",
+    "gulp": "^4.0.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RDLatuheru/ReversiClient.git"
+  },
+  "bugs": {
+    "url": "https://github.com/RDLatuheru/ReversiClient/issues"
+  },
+  "homepage": "https://github.com/RDLatuheru/ReversiClient#readme"
 }
